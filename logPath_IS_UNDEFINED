@@ -1,0 +1,271 @@
+文件记录-2020-04-25 10:17:36 [main] INFO  c.y.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on DESKTOP-HUCAISQ with PID 20356 (E:\yuansb\my-learn-project\hello-spring-boot\target\classes started by think in E:\yuansb\my-learn-project\hello-spring-boot)
+文件记录-2020-04-25 10:17:36 [main] INFO  c.y.h.s.b.HelloSpringBootApplication - The following profiles are active: local
+文件记录-2020-04-25 10:17:37 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.yuansb.hello.spring.boot]' package. Please check your configuration.
+文件记录-2020-04-25 10:17:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+文件记录-2020-04-25 10:17:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+文件记录-2020-04-25 10:17:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28ms. Found 0 repository interfaces.
+文件记录-2020-04-25 10:17:38 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$12a864cc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+文件记录-2020-04-25 10:17:38 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8180 (http)
+文件记录-2020-04-25 10:17:38 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8180"]
+文件记录-2020-04-25 10:17:38 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+文件记录-2020-04-25 10:17:38 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+文件记录-2020-04-25 10:17:39 [main] INFO  o.a.c.c.C.[.[localhost].[/boot] - Initializing Spring embedded WebApplicationContext
+文件记录-2020-04-25 10:17:39 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2897 ms
+文件记录-2020-04-25 10:17:40 [main] INFO  c.y.h.spring.boot.config.JedisConfig - JedisPool注入成功！
+文件记录-2020-04-25 10:17:40 [main] INFO  c.y.h.spring.boot.config.JedisConfig - redis地址：127.0.0.1:6379
+文件记录-2020-04-25 10:17:40 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+文件记录-2020-04-25 10:17:40 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+文件记录-2020-04-25 10:17:45 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'enableRedisKeyspaceNotificationsInitializer' defined in class path resource [org/springframework/session/data/redis/config/annotation/web/http/RedisHttpSessionConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1:6379
+文件记录-2020-04-25 10:17:47 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+文件记录-2020-04-25 10:17:47 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+文件记录-2020-04-25 10:17:47 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'enableRedisKeyspaceNotificationsInitializer' defined in class path resource [org/springframework/session/data/redis/config/annotation/web/http/RedisHttpSessionConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1:6379
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+	at com.yuansb.hello.spring.boot.HelloSpringBootApplication.main(HelloSpringBootApplication.java:14)
+Caused by: org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1:6379
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1106)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1085)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedConnection(LettuceConnectionFactory.java:866)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getConnection(LettuceConnectionFactory.java:341)
+	at org.springframework.session.data.redis.config.annotation.web.http.RedisHttpSessionConfiguration$EnableRedisKeyspaceNotificationsInitializer.afterPropertiesSet(RedisHttpSessionConfiguration.java:302)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 16 common frames omitted
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78)
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56)
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:235)
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:204)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:113)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:113)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1104)
+	... 22 common frames omitted
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /127.0.0.1:6379
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:670)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:617)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:534)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:906)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	... 12 common frames omitted
+文件记录-2020-04-25 10:24:51 [main] INFO  c.y.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on DESKTOP-HUCAISQ with PID 5148 (E:\yuansb\my-learn-project\hello-spring-boot\target\classes started by think in E:\yuansb\my-learn-project\hello-spring-boot)
+文件记录-2020-04-25 10:24:51 [main] INFO  c.y.h.s.b.HelloSpringBootApplication - The following profiles are active: local
+文件记录-2020-04-25 10:24:52 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.yuansb.hello.spring.boot]' package. Please check your configuration.
+文件记录-2020-04-25 10:24:52 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+文件记录-2020-04-25 10:24:52 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+文件记录-2020-04-25 10:24:52 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24ms. Found 0 repository interfaces.
+文件记录-2020-04-25 10:24:53 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$da00997d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+文件记录-2020-04-25 10:24:53 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8180 (http)
+文件记录-2020-04-25 10:24:53 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8180"]
+文件记录-2020-04-25 10:24:53 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+文件记录-2020-04-25 10:24:53 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+文件记录-2020-04-25 10:24:54 [main] INFO  o.a.c.c.C.[.[localhost].[/boot] - Initializing Spring embedded WebApplicationContext
+文件记录-2020-04-25 10:24:54 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2225 ms
+文件记录-2020-04-25 10:24:54 [main] INFO  c.y.h.spring.boot.config.JedisConfig - JedisPool注入成功！
+文件记录-2020-04-25 10:24:54 [main] INFO  c.y.h.spring.boot.config.JedisConfig - redis地址：127.0.0.1:6379
+文件记录-2020-04-25 10:24:54 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+文件记录-2020-04-25 10:24:54 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+文件记录-2020-04-25 10:24:59 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+文件记录-2020-04-25 10:24:59 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+文件记录-2020-04-25 10:24:59 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+文件记录-2020-04-25 10:24:59 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+文件记录-2020-04-25 10:24:59 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+文件记录-2020-04-25 10:24:59 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+文件记录-2020-04-25 10:25:00 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+文件记录-2020-04-25 10:25:00 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8180"]
+文件记录-2020-04-25 10:25:00 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8180 (http) with context path '/boot'
+文件记录-2020-04-25 10:25:00 [main] INFO  c.y.h.s.b.HelloSpringBootApplication - Started HelloSpringBootApplication in 9.498 seconds (JVM running for 12.574)
+文件记录-2020-04-25 10:25:45 [http-nio-8180-exec-1] INFO  o.a.c.c.C.[.[localhost].[/boot] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+文件记录-2020-04-25 10:25:45 [http-nio-8180-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+文件记录-2020-04-25 10:25:46 [http-nio-8180-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+文件记录-2020-04-25 10:25:46 [http-nio-8180-exec-1] INFO  c.y.h.s.b.c.TestIndexController - Hello Spring Boot , current time is 1587781546055
+文件记录-2020-04-25 11:01:55 [main] INFO  c.y.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on DESKTOP-HUCAISQ with PID 16824 (E:\yuansb\my-learn-project\hello-spring-boot\target\classes started by think in E:\yuansb\my-learn-project\hello-spring-boot)
+文件记录-2020-04-25 11:01:55 [main] INFO  c.y.h.s.b.HelloSpringBootApplication - The following profiles are active: local
+文件记录-2020-04-25 11:01:56 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.yuansb.hello.spring.boot]' package. Please check your configuration.
+文件记录-2020-04-25 11:01:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+文件记录-2020-04-25 11:01:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+文件记录-2020-04-25 11:01:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25ms. Found 0 repository interfaces.
+文件记录-2020-04-25 11:01:57 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cfb11019] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+文件记录-2020-04-25 11:01:57 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8180 (http)
+文件记录-2020-04-25 11:01:57 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8180"]
+文件记录-2020-04-25 11:01:57 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+文件记录-2020-04-25 11:01:57 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+文件记录-2020-04-25 11:01:57 [main] INFO  o.a.c.c.C.[.[localhost].[/boot] - Initializing Spring embedded WebApplicationContext
+文件记录-2020-04-25 11:01:57 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1779 ms
+文件记录-2020-04-25 11:01:58 [main] INFO  c.y.h.spring.boot.config.JedisConfig - JedisPool注入成功！
+文件记录-2020-04-25 11:01:58 [main] INFO  c.y.h.spring.boot.config.JedisConfig - redis地址：127.0.0.1:6379
+文件记录-2020-04-25 11:01:58 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+文件记录-2020-04-25 11:01:58 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+文件记录-2020-04-25 11:02:02 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+文件记录-2020-04-25 11:02:02 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+文件记录-2020-04-25 11:02:02 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+文件记录-2020-04-25 11:02:02 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+文件记录-2020-04-25 11:02:02 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+文件记录-2020-04-25 11:02:02 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+文件记录-2020-04-25 11:02:03 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+文件记录-2020-04-25 11:02:03 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8180"]
+文件记录-2020-04-25 11:02:03 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8180 (http) with context path '/boot'
+文件记录-2020-04-25 11:02:03 [main] INFO  c.y.h.s.b.HelloSpringBootApplication - Started HelloSpringBootApplication in 8.633 seconds (JVM running for 11.401)
+文件记录-2020-04-25 11:09:46 [main] INFO  c.y.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on DESKTOP-HUCAISQ with PID 17792 (E:\yuansb\my-learn-project\hello-spring-boot\target\classes started by think in E:\yuansb\my-learn-project\hello-spring-boot)
+文件记录-2020-04-25 11:09:46 [main] INFO  c.y.h.s.b.HelloSpringBootApplication - The following profiles are active: local
+文件记录-2020-04-25 11:09:47 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.yuansb.hello.spring.boot]' package. Please check your configuration.
+文件记录-2020-04-25 11:09:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+文件记录-2020-04-25 11:09:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+文件记录-2020-04-25 11:09:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20ms. Found 0 repository interfaces.
+文件记录-2020-04-25 11:09:47 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6cc8798] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+文件记录-2020-04-25 11:09:48 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8180 (http)
+文件记录-2020-04-25 11:09:48 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8180"]
+文件记录-2020-04-25 11:09:48 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+文件记录-2020-04-25 11:09:48 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+文件记录-2020-04-25 11:09:48 [main] INFO  o.a.c.c.C.[.[localhost].[/boot] - Initializing Spring embedded WebApplicationContext
+文件记录-2020-04-25 11:09:48 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1865 ms
+文件记录-2020-04-25 11:09:48 [main] INFO  c.y.h.spring.boot.config.JedisConfig - JedisPool注入成功！
+文件记录-2020-04-25 11:09:48 [main] INFO  c.y.h.spring.boot.config.JedisConfig - redis地址：127.0.0.1:6379
+文件记录-2020-04-25 11:09:49 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+文件记录-2020-04-25 11:09:49 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+文件记录-2020-04-25 11:09:52 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+文件记录-2020-04-25 11:09:53 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+文件记录-2020-04-25 11:09:53 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+文件记录-2020-04-25 11:09:53 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+文件记录-2020-04-25 11:09:53 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+文件记录-2020-04-25 11:09:53 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+文件记录-2020-04-25 11:09:54 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+文件记录-2020-04-25 11:09:54 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8180"]
+文件记录-2020-04-25 11:09:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8180 (http) with context path '/boot'
+文件记录-2020-04-25 11:09:54 [main] INFO  c.y.h.s.b.HelloSpringBootApplication - Started HelloSpringBootApplication in 8.757 seconds (JVM running for 11.814)
+文件记录-2020-04-25 11:10:46 [http-nio-8180-exec-1] INFO  o.a.c.c.C.[.[localhost].[/boot] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+文件记录-2020-04-25 11:10:46 [http-nio-8180-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+文件记录-2020-04-25 11:10:46 [http-nio-8180-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+文件记录-2020-04-25 11:14:17 [main] INFO  c.y.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on DESKTOP-HUCAISQ with PID 23340 (E:\yuansb\my-learn-project\hello-spring-boot\target\classes started by think in E:\yuansb\my-learn-project\hello-spring-boot)
+文件记录-2020-04-25 11:14:17 [main] INFO  c.y.h.s.b.HelloSpringBootApplication - The following profiles are active: local
+文件记录-2020-04-25 11:14:18 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.yuansb.hello.spring.boot]' package. Please check your configuration.
+文件记录-2020-04-25 11:14:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+文件记录-2020-04-25 11:14:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+文件记录-2020-04-25 11:14:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19ms. Found 0 repository interfaces.
+文件记录-2020-04-25 11:14:19 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$12e29a86] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+文件记录-2020-04-25 11:14:19 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8180 (http)
+文件记录-2020-04-25 11:14:19 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8180"]
+文件记录-2020-04-25 11:14:19 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+文件记录-2020-04-25 11:14:19 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+文件记录-2020-04-25 11:14:19 [main] INFO  o.a.c.c.C.[.[localhost].[/boot] - Initializing Spring embedded WebApplicationContext
+文件记录-2020-04-25 11:14:19 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1534 ms
+文件记录-2020-04-25 11:14:20 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testIndexController': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'say.info' in value "${say.info}"
+文件记录-2020-04-25 11:14:20 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+文件记录-2020-04-25 11:14:20 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+文件记录-2020-04-25 11:14:20 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testIndexController': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'say.info' in value "${say.info}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:380)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+	at com.yuansb.hello.spring.boot.HelloSpringBootApplication.main(HelloSpringBootApplication.java:14)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'say.info' in value "${say.info}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:178)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:851)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1192)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	... 17 common frames omitted
+文件记录-2020-04-25 11:16:56 [main] INFO  c.y.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on DESKTOP-HUCAISQ with PID 6348 (E:\yuansb\my-learn-project\hello-spring-boot\target\classes started by think in E:\yuansb\my-learn-project\hello-spring-boot)
+文件记录-2020-04-25 11:16:56 [main] INFO  c.y.h.s.b.HelloSpringBootApplication - The following profiles are active: local
+文件记录-2020-04-25 11:16:57 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.yuansb.hello.spring.boot]' package. Please check your configuration.
+文件记录-2020-04-25 11:16:57 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+文件记录-2020-04-25 11:16:57 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+文件记录-2020-04-25 11:16:57 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18ms. Found 0 repository interfaces.
+文件记录-2020-04-25 11:16:57 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b1710394] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+文件记录-2020-04-25 11:16:58 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8180 (http)
+文件记录-2020-04-25 11:16:58 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8180"]
+文件记录-2020-04-25 11:16:58 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+文件记录-2020-04-25 11:16:58 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+文件记录-2020-04-25 11:16:58 [main] INFO  o.a.c.c.C.[.[localhost].[/boot] - Initializing Spring embedded WebApplicationContext
+文件记录-2020-04-25 11:16:58 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1640 ms
+文件记录-2020-04-25 11:16:58 [main] INFO  c.y.h.spring.boot.config.JedisConfig - JedisPool注入成功！
+文件记录-2020-04-25 11:16:58 [main] INFO  c.y.h.spring.boot.config.JedisConfig - redis地址：127.0.0.1:6379
+文件记录-2020-04-25 11:16:58 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+文件记录-2020-04-25 11:16:58 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+文件记录-2020-04-25 11:17:02 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+文件记录-2020-04-25 11:17:02 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+文件记录-2020-04-25 11:17:02 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+文件记录-2020-04-25 11:17:02 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+文件记录-2020-04-25 11:17:02 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+文件记录-2020-04-25 11:17:02 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+文件记录-2020-04-25 11:17:03 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+文件记录-2020-04-25 11:17:03 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8180"]
+文件记录-2020-04-25 11:17:03 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8180 (http) with context path '/boot'
+文件记录-2020-04-25 11:17:03 [main] INFO  c.y.h.s.b.HelloSpringBootApplication - Started HelloSpringBootApplication in 7.988 seconds (JVM running for 10.651)
+文件记录-2020-04-25 11:29:46 [main] INFO  c.y.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on DESKTOP-HUCAISQ with PID 22952 (E:\yuansb\my-learn-project\hello-spring-boot\target\classes started by think in E:\yuansb\my-learn-project\hello-spring-boot)
+文件记录-2020-04-25 11:29:46 [main] INFO  c.y.h.s.b.HelloSpringBootApplication - The following profiles are active: local
+文件记录-2020-04-25 11:29:47 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.yuansb.hello.spring.boot]' package. Please check your configuration.
+文件记录-2020-04-25 11:29:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+文件记录-2020-04-25 11:29:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+文件记录-2020-04-25 11:29:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20ms. Found 0 repository interfaces.
+文件记录-2020-04-25 11:29:47 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$da6fe334] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+文件记录-2020-04-25 11:29:48 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8180 (http)
+文件记录-2020-04-25 11:29:48 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8180"]
+文件记录-2020-04-25 11:29:48 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+文件记录-2020-04-25 11:29:48 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+文件记录-2020-04-25 11:29:48 [main] INFO  o.a.c.c.C.[.[localhost].[/boot] - Initializing Spring embedded WebApplicationContext
+文件记录-2020-04-25 11:29:48 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1609 ms
+文件记录-2020-04-25 11:29:48 [main] INFO  c.y.h.spring.boot.config.JedisConfig - JedisPool注入成功！
+文件记录-2020-04-25 11:29:48 [main] INFO  c.y.h.spring.boot.config.JedisConfig - redis地址：127.0.0.1:6379
+文件记录-2020-04-25 11:29:49 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+文件记录-2020-04-25 11:29:49 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+文件记录-2020-04-25 11:29:52 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+文件记录-2020-04-25 11:29:52 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+文件记录-2020-04-25 11:29:52 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+文件记录-2020-04-25 11:29:52 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+文件记录-2020-04-25 11:29:52 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+文件记录-2020-04-25 11:29:52 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+文件记录-2020-04-25 11:29:54 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+文件记录-2020-04-25 11:29:54 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8180"]
+文件记录-2020-04-25 11:29:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8180 (http) with context path '/boot'
+文件记录-2020-04-25 11:29:54 [main] INFO  c.y.h.s.b.HelloSpringBootApplication - Started HelloSpringBootApplication in 8.129 seconds (JVM running for 10.825)
+文件记录-2020-04-25 11:30:27 [http-nio-8180-exec-1] INFO  o.a.c.c.C.[.[localhost].[/boot] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+文件记录-2020-04-25 11:30:27 [http-nio-8180-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+文件记录-2020-04-25 11:30:27 [http-nio-8180-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 14 ms

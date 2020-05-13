@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: hello-spring-boot
+  profiles:
+    active: local
+
+server:
+  tomcat:
+    uri-encoding: UTF-8
+  servlet:
+    context-path: /boot
+
+mybatis:
+  # 实体类的存放路径
+  type-aliases-package: com.yuansb.hello.spring.boot.domain
+  mapper-locations: com.yuansb.hello.spring.boot.mapper.impl/*.xml
+
+logging:
+  config: classpath:logback-spring.xml
