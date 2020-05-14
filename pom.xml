@@ -16,8 +16,14 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <commons-lang3.version>3.8</commons-lang3.version>
+        <tk.mybatis.version>2.1.5</tk.mybatis.version>
+        <pagehelper.version>1.2.12</pagehelper.version>
         <jedis.version>2.5.2</jedis.version>
+        <commons-lang.version>2.6</commons-lang.version>
+        <commons-lang3.version>3.3.2</commons-lang3.version>
+        <commons-fileupload.version>1.3.1</commons-fileupload.version>
+        <commons-configuration.version>1.10</commons-configuration.version>
+        <jsch.version>0.1.53</jsch.version>
     </properties>
 
     <dependencies>
@@ -52,12 +58,6 @@
             <artifactId>nekohtml</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>${commons-lang3.version}</version>
-        </dependency>
-
         <!-- 主要增加 HikariCP 依赖 -->
         <dependency>
             <groupId>com.zaxxer</groupId>
@@ -86,14 +86,14 @@
         <dependency>
             <groupId>tk.mybatis</groupId>
             <artifactId>mapper-spring-boot-starter</artifactId>
-            <version>2.1.5</version>
+            <version>${tk.mybatis.version}</version>
         </dependency>
 
         <!-- pagehelper分页插件 -->
         <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper-spring-boot-starter</artifactId>
-            <version>1.2.12</version>
+            <version>${pagehelper.version}</version>
         </dependency>
 
         <!-- redis begin -->
@@ -111,6 +111,36 @@
             <artifactId>spring-session-data-redis</artifactId>
         </dependency>
         <!-- redis end -->
+
+        <!-- commons begin  -->
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>${commons-lang.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${commons-lang3.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-configuration</groupId>
+            <artifactId>commons-configuration</artifactId>
+            <version>${commons-configuration.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>${commons-fileupload.version}</version>
+        </dependency>
+        <!-- commons end  -->
+
+        <!-- SSH2：sftp实现类 -->
+        <dependency>
+            <groupId>com.jcraft</groupId>
+            <artifactId>jsch</artifactId>
+            <version>${jsch.version}</version>
+        </dependency>
 
     </dependencies>
 
