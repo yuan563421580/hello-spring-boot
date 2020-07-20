@@ -13,7 +13,7 @@ server:
 mybatis:
   # 实体类的存放路径
   type-aliases-package: com.yuansb.hello.spring.boot.domain
-  mapper-locations: com.yuansb.hello.spring.boot.mapper.impl/*.xml
+  mapper-locations: classpath:mapper/*.xml
 
 logging:
   config: classpath:logback-spring.xml

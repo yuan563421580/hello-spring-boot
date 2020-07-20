@@ -26,9 +26,7 @@
         <javaModelGenerator targetPackage="com.yuansb.hello.spring.boot.domain" targetProject="src/main/java"/>
 
         <!-- 配置 XML 存放路径 在 resources 中 需要对应修改 application.yml 文件中的 mapper-locations: classpath:mapper/*.xml-->
-        <!--<sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources"/>-->
-        <!-- 配置 XML 存放路径 -->
-        <sqlMapGenerator targetPackage="com.yuansb.hello.spring.boot.mapper.impl" targetProject="src/main/java"/>
+       <sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources"/>
 
         <!-- 配置 DAO 存放路径 -->
         <javaClientGenerator
